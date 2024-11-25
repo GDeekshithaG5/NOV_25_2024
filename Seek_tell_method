@@ -1,0 +1,6 @@
+fptr=open("C:/Users/Public/nov22.txt","r")
+print("initial position of cursor:",fptr.tell())
+fptr.seek(10)
+print("after moved cursor to the desired location:",fptr.tell())
+fptr.seek(25)
+print("after moved cursor to the desired location:",fptr.tell())
