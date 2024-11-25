@@ -1,0 +1,3 @@
+import os
+#rename the existing file
+os.rename("C:/Users/Public/venkat.txt","C:/Users/Public/venkatesh.txt")
