@@ -1,0 +1,56 @@
+import os
+file="C:/Users/Public/text_file.txt"
+
+def file_write(file):
+    with open(file,"w") as fptr:
+        fptr.write("welcome the hyderabad")
+        print("text has been written to the desired file")
+def file_read(file):
+    with open(file,"r") as fptr:
+        data=fptr.read()
+        print("data:",data)
+
+def file_readlines_method(file):
+    with open(file,"r") as fptr:
+        data=fptr.readlines()
+        print("data:", data)
+
+def file_read_n_method(file):
+    with open(file, "r") as fptr:
+        data=fptr.read(5)
+        print("data:",data)
+
+def file_append(file):
+    with open(file, "a") as fptr:
+        fptr.write("\nGood Morning hyderabad")
+        print("text has been written to the desired file")
+
+
+def file_rename():
+    os.rename("C:/Users/Public/text_file.txt","C:/Users/Public/text1.txt")
+
+def file_delete(file):
+    os.remove("C:/Users/Public/nov22.csv")
+    print("desired file is deleted")
+
+
+#calling functions
+
+file_write(file)
+file_read(file)
+file_readlines_method(file)
+file_read_n_method(file)
+file_append(file)
+file_rename()
+file_delete(file)
+
+
+
+
+
+
+
+
+
+
+
